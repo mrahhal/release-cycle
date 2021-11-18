@@ -2,7 +2,7 @@
 
 This file documents how I manage my own release cycles for packages I maintain. Old repos may be outdated.
 
-`main` is the _development_ branch. There's no need to overcomplicate things with an additional `dev` branch. Major/Minor releases can branch off of `main`.
+To start with, `main` is the _development_ branch. There's no need to overcomplicate things with an additional `dev` branch. In addition, next version is always developed in `main`. i.e `main` always points to the latest development effort. When there's a need to publish a patch for an earlier version, you can always branch off of that version's tag.
 
 Follow [Semantic Versioning](https://semver.org/).
 
@@ -23,13 +23,11 @@ Ref:
 
 The cycle might contain specific steps depending on the stack (.Net/Node/etc).
 
-- Branch if necessary
 - Update the version (updating the version first allows CI to produce proper prerelease packages if necessary)
   - .Net: Update the version in version.props
   - Node: `npm version [...] --no-git-tag-version`
-- Work and merge PRs, assigning them one of the release:* labels
-- When ready, checkout `main` and merge your branch
-- Create an annonated tag: `git tag -m vx.y.z vx.y.z`
+- Work: Merge PRs, assigning them one of the release:* labels (so that they're picked up by release auto generation)
+- When ready to publish the new version: create an annonated tag: `git tag -m vx.y.z vx.y.z`
 - Push with tags: `git push --follow-tags`
 - CI should run, if all's well proceed to next step
 - Publish packages / Run deployments

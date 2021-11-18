@@ -35,7 +35,7 @@ The cycle might contain specific steps depending on the stack (.Net/Node/etc).
 - Publish packages / Run deployments
   - Either have an action workflow that auto publishes/deploys on a tag
   - Or publish/deploy manually
-- Go to GitHub Releases, create new release, select tag, auto generate release notes
+- Go to GitHub Releases, create new release, select tag, auto generate release notes, update more if necessary
 - Copy release content to CHANGELOG.md
 
 ## Reference repos

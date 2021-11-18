@@ -4,6 +4,8 @@ This file documents how I manage my own release cycles for packages I maintain. 
 
 `main` is the _development_ branch. There's no need to overcomplicate things with an additional `dev` branch. Major/Minor releases can branch off of `main`.
 
+Follow [Semantic Versioning](https://semver.org/).
+
 ## Setup
 
 Releasing tries to follow https://keepachangelog.com for the CHANGELOG file format.

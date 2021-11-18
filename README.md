@@ -26,8 +26,8 @@ The cycle might contain specific steps depending on the stack (.Net/Node/etc).
 - Update the version (updating the version first allows CI to produce proper prerelease packages if necessary)
   - .Net: Update the version in version.props
   - Node: `npm version [...] --no-git-tag-version`
-- Work: Merge PRs, assigning them one of the release:* labels (so that they're picked up by release auto generation)
-- When ready to publish the new version: create an annonated tag: `git tag -m vx.y.z vx.y.z`
+- Work: Merge PRs, assigning them one of the release:* labels (so that they're picked up by auto generated release notes)
+- When ready to publish the new version, create an annonated tag: `git tag -m vx.y.z vx.y.z`
 - Push with tags: `git push --follow-tags`
 - CI should run, if all's well proceed to next step
 - Publish packages / Run deployments

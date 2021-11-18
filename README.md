@@ -6,9 +6,9 @@ To start with, `main` is the _development_ branch. There's no need to overcompli
 
 Version naming follows [Semantic Versioning](https://semver.org/).
 
-## Setup
+Releasing follows [Keep a Changelog](https://keepachangelog.com) for the CHANGELOG file format.
 
-Releasing tries to follow https://keepachangelog.com for the CHANGELOG file format.
+## Setup
 
 Setting up the repo:
 - Create DEVELOPMENT.md that describes the development cycle and possibly links to this document.

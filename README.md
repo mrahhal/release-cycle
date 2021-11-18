@@ -25,7 +25,7 @@ The cycle might contain specific steps depending on the stack (.Net/Node/etc).
 - Update the version
   - .Net: Update the version in version.props
   - Node: `npm version [...] --no-git-tag-version`
-- Work and merge PRs
+- Work and merge PRs, assigning them one of the release:* labels
 - When ready, checkout `main` and merge your branch
 - Create an annonated tag: `git tag -m vx.y.z vx.y.z`
 - Push with tags: `git push --follow-tags`

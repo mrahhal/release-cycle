@@ -22,7 +22,7 @@ Ref:
 The cycle might contain specific steps depending on the stack (.Net/Node/etc).
 
 - Branch if necessary
-- Update the version
+- Update the version (updating the version first allows CI to produce proper prerelease packages if necessary)
   - .Net: Update the version in version.props
   - Node: `npm version [...] --no-git-tag-version`
 - Work and merge PRs, assigning them one of the release:* labels

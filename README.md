@@ -4,7 +4,7 @@ This file documents how I manage my own release cycles for packages I maintain. 
 
 To start with, `main` is the _development_ branch. There's no need to overcomplicate things with an additional `dev` branch. In addition, next version is always developed in `main`. i.e `main` always points to the latest development effort. When there's a need to publish a patch for an earlier version, you can always branch off of that version's tag.
 
-Follow [Semantic Versioning](https://semver.org/).
+Version naming follows [Semantic Versioning](https://semver.org/).
 
 ## Setup
 

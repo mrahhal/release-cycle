@@ -39,9 +39,9 @@ The cycle might contain specific steps depending on the stack (.Net/Node/etc).
 ## Reference repos
 
 .Net:
-- https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination
+- https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination (in progress)
 
 Node:
-- https://github.com/mrahhal/mr-gtag
 - https://github.com/mrahhal/css-theming
-- https://github.com/mrahhal/mr-scroll
+- https://github.com/mrahhal/mr-gtag (in progress)
+- https://github.com/mrahhal/mr-scroll (in progress)

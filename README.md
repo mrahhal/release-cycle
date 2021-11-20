@@ -2,11 +2,11 @@
 
 This file documents how I manage my own release cycles for packages I maintain. Old repos may be outdated.
 
-To start with, `main` is the _development_ branch. There's no need to overcomplicate things with an additional `dev` branch. In addition, next version is always developed in `main`. i.e `main` always points to the latest development effort. When there's a need to publish a patch for an earlier version, you can always branch off of that version's tag.
+To start with, `main` is the _development_ branch. There's no need to overcomplicate things with an additional `dev` branch. In addition, next version is always developed in `main`. i.e `main` always points to the latest development effort. This is also important so that PRs can properly reference and auto close issues. When there's a need to publish a patch for an earlier version, you can always branch off of that version's tag.
 
 Version naming follows [Semantic Versioning](https://semver.org/).
 
-Releasing follows [Keep a Changelog](https://keepachangelog.com) for the CHANGELOG file format.
+Releasing follows [Keep a Changelog](https://keepachangelog.com) for the CHANGELOG.md file format.
 
 ## Setup
 

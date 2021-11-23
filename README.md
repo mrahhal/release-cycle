@@ -27,14 +27,15 @@ The cycle might contain specific steps depending on the stack (.Net/Node/etc).
   - .Net: Update the version in version.props
   - Node: `npm version [...] --no-git-tag-version`
 - Work: Merge PRs, assigning them one of the release:* labels (so that they're picked up by auto generated release notes)
+  - Alternatively, if work isn't done in PRs write changes to CHANGELOG.md manually 
 - When ready to publish the new version, create an annonated tag: `git tag -m vx.y.z vx.y.z`
 - Push with tags: `git push --follow-tags`
 - CI should run, if all's well proceed to next step
 - Publish packages / Run deployments
   - Either have an action workflow that auto publishes/deploys on a tag
   - Or publish/deploy manually
-- Go to GitHub Releases, create new release, select tag, auto generate release notes, update more if necessary
-- Copy release content to CHANGELOG.md
+- Go to GitHub Releases, create new release, select previously pushed tag, auto generate release notes (or copy from manual CHANGELOG.md), update more if necessary
+- Copy release content back to CHANGELOG.md if necessary
 
 ## Reference repos
 

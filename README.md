@@ -36,6 +36,7 @@ The cycle might contain specific steps depending on the stack (.Net/Node/etc).
   - Or publish/deploy manually
 - Go to GitHub Releases, create new release, select previously pushed tag, auto generate release notes (or copy from manual CHANGELOG.md), update more if necessary
 - Copy release content back to CHANGELOG.md if necessary
+- Close the relevant milestone if it exists
 
 ## Reference repos
 

@@ -41,7 +41,7 @@ The cycle might contain specific steps depending on the stack (.Net/Node/etc).
 ## Reference repos
 
 .Net:
-- https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination (in progress)
+- https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination
 
 Node:
 - https://github.com/mrahhal/css-theming

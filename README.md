@@ -28,6 +28,7 @@ The cycle might contain specific steps depending on the stack (.Net/Node/etc).
   - Node: `npm version [...] --no-git-tag-version`
 - Work: Merge PRs, assigning them one of the release:* labels (so that they're picked up by auto generated release notes)
   - Alternatively, if work isn't done in PRs write changes to CHANGELOG.md manually 
+- Run the tests locally and make sure all pass
 - When ready to publish the new version, create an annonated tag: `git tag -m vx.y.z vx.y.z`
 - Push with tags: `git push --follow-tags` (if this is a new branch you've created locally: `git push origin HEAD -u --follow-tags`)
 - CI should run, if all's well proceed to next step

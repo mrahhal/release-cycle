@@ -34,6 +34,9 @@ The cycle might contain specific steps depending on the stack (.Net/Node/etc).
 - Publish packages / Run deployments
   - Either have an action workflow that auto publishes/deploys on a tag
   - Or publish/deploy manually
+    - For a dotnet package:
+      - Invoke "build.ps1"
+      - Invoke "nuget-push.ps1"
 - Go to GitHub Releases, create new release, select previously pushed tag, auto generate release notes (or copy from manual CHANGELOG.md), update more if necessary
 - Copy release content back to CHANGELOG.md if necessary
 - Close the relevant milestone if it exists

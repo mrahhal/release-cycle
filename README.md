@@ -13,7 +13,7 @@ Releasing follows [Keep a Changelog](https://keepachangelog.com) for the CHANGEL
 Setting up the repo:
 - Create DEVELOPMENT.md which describes the development cycle and possibly links to this document.
 - Create release:* labels (ref: https://github.com/mrahhal/css-theming/labels)
-- Create .github/release.yml (ref: https://github.com/mrahhal/css-theming/blob/main/.github.release.yml)
+- Create .github/release.yml (ref: https://github.com/mrahhal/css-theming/blob/main/.github/release.yml)
 - Create CHANGELOG.md. Will be filling this out after creating each release so that a copy of the CHANGELOG is kept offline independent of GitHub. (ref: https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHANGELOG.md)
 
 Ref:

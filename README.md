@@ -11,6 +11,7 @@ Releasing follows [Keep a Changelog](https://keepachangelog.com) for the CHANGEL
 ## Setup
 
 Setting up the repo:
+- Use a template if possible: [template-dotnet-package](https://github.com/mrahhal/template-dotnet-package), [template-roslyn-analyzer](https://github.com/mrahhal/template-roslyn-analyzer)
 - Create DEVELOPMENT.md which describes the development cycle and possibly links to this document.
 - Create release:* labels (ref: https://github.com/mrahhal/css-theming/labels)
 - Create .github/release.yml (ref: https://github.com/mrahhal/css-theming/blob/main/.github/release.yml)
@@ -46,6 +47,8 @@ The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
 ## Reference repos
 
 dotnet:
+- https://github.com/mrahhal/template-dotnet-package
+- https://github.com/mrahhal/template-roslyn-analyzer
 - https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination
 - https://github.com/mrahhal/MR.AspNetCore.Pagination
 

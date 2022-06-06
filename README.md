@@ -47,12 +47,12 @@ The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
 ## Reference repos
 
 dotnet:
-- https://github.com/mrahhal/template-dotnet-package
-- https://github.com/mrahhal/template-roslyn-analyzer
-- https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination
-- https://github.com/mrahhal/MR.AspNetCore.Pagination
+- https://github.com/mrahhal/template-dotnet-package 🟠 (needs update to release.yml and GH labels)
+- https://github.com/mrahhal/template-roslyn-analyzer 🟠 (needs update to release.yml and GH labels)
+- https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination ✅
+- https://github.com/mrahhal/MR.AspNetCore.Pagination 🟠 (needs update to release.yml and GH labels)
 
 Node:
-- https://github.com/mrahhal/css-theming
-- https://github.com/mrahhal/mr-gtag (in progress)
-- https://github.com/mrahhal/mr-scroll (in progress)
+- https://github.com/mrahhal/css-theming ✅
+- https://github.com/mrahhal/mr-gtag ❌
+- https://github.com/mrahhal/mr-scroll ❌

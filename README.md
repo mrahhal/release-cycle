@@ -91,7 +91,8 @@ The list of change types (in this order):
 
 Ref:
 
-https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHANGELOG.md
+- https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHANGELOG.md
+- https://github.com/mrahhal/css-theming/blob/main/CHANGELOG.md
 
 ## Reference repos
 

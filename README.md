@@ -11,14 +11,16 @@ Releasing follows [Keep a Changelog](https://keepachangelog.com) for the CHANGEL
 ## Setup
 
 Setting up the repo:
+
 - Use a template if possible: [template-dotnet-package](https://github.com/mrahhal/template-dotnet-package), [template-roslyn-analyzer](https://github.com/mrahhal/template-roslyn-analyzer)
 - Create DEVELOPMENT.md which describes the development cycle and possibly links to this document.
-- Create release:* labels (ref: https://github.com/mrahhal/css-theming/labels)
+- Create release:\* labels (ref: https://github.com/mrahhal/css-theming/labels)
 - Create .github/release.yml (ref: https://github.com/mrahhal/css-theming/blob/main/.github/release.yml)
 - Create CHANGELOG.md. Will be filling this out after creating each release so that a copy of the CHANGELOG is kept offline independent of GitHub. (ref: https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHANGELOG.md)
 - Add to GitHub repo secrets: NUGET_ORG_API_KEY
 
 Ref:
+
 - https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes
 
 ## Cycle
@@ -28,8 +30,8 @@ The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
 - Update the version (updating the version first allows CI to produce proper prerelease packages if necessary):
   - dotnet: Update the version in version.props
   - Node: `npm version [...] --no-git-tag-version`
-- Work: Merge PRs, assigning them one of the release:* labels (so that they're picked up by auto generated release notes)
-  - Alternatively, if work isn't done in PRs write changes to CHANGELOG.md manually 
+- Work: Merge PRs, assigning them one of the release:\* labels (so that they're picked up by auto generated release notes)
+  - Alternatively, if work isn't done in PRs write changes to CHANGELOG.md manually
 - Run the tests locally and make sure all pass
 - When ready to publish the new version, create an annonated tag (if you're writing CHANGELOG.md manually make sure it's updated here to reflect this tag):
   - dotnet: Run `./scripts tag-version` which gets the version from version.props file
@@ -47,12 +49,14 @@ The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
 ## Reference repos
 
 dotnet:
+
 - https://github.com/mrahhal/template-dotnet-package 🟠 (needs update to release.yml and GH labels)
 - https://github.com/mrahhal/template-roslyn-analyzer 🟠 (needs update to release.yml and GH labels)
 - https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination ✅
 - https://github.com/mrahhal/MR.AspNetCore.Pagination 🟠 (needs update to release.yml and GH labels)
 
 Node:
+
 - https://github.com/mrahhal/css-theming ✅
 - https://github.com/mrahhal/mr-gtag ❌
 - https://github.com/mrahhal/mr-scroll ❌

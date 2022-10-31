@@ -46,9 +46,9 @@ The CHANGELOG.md file will be filled as we work towards a release. No change sho
 
 Usually when a release is ready, you'd edit the changelog (strip "Unreleased", add a date, make sure the diff link is updated) and from this commit you tag and publish.
 
-More detailed info about a change should be added in the issue or PR, not in the changelog.
+More detailed info about a change should be added in the issue or PR, not in the changelog itself.
 
-Here's a template:
+Here's an example changelog file:
 
 ```md
 # Changelog

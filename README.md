@@ -97,10 +97,9 @@ https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHA
 
 dotnet:
 
-- https://github.com/mrahhal/template-dotnet-package 🟠 (needs update to release.yml and GH labels)
-- https://github.com/mrahhal/template-roslyn-analyzer 🟠 (needs update to release.yml and GH labels)
+- https://github.com/mrahhal/template-dotnet-package ✅
+- https://github.com/mrahhal/template-roslyn-analyzer ✅
 - https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination ✅
-- https://github.com/mrahhal/MR.AspNetCore.Pagination 🟠 (needs update to release.yml and GH labels)
 
 Node:
 

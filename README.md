@@ -17,7 +17,7 @@ Setting up the repo:
 - Create release:\* labels (ref: https://github.com/mrahhal/css-theming/labels)
 - Create .github/release.yml (ref: https://github.com/mrahhal/css-theming/blob/main/.github/release.yml)
 - Create CHANGELOG.md. Will be filling this out after creating each release so that a copy of the CHANGELOG is kept offline independent of GitHub. (ref: https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHANGELOG.md)
-- Add to GitHub repo secrets: NUGET_ORG_API_KEY
+- Add to GitHub repo secrets: NUGET_TOKEN
 
 Ref:
 

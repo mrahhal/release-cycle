@@ -26,7 +26,7 @@ The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
   - Node: `npm version [...] --no-git-tag-version`
 - Work:
   - Merge PRs, making sure they update the changelog where appropriate
-  - Alternatively, if work isn't done in PRs write changes to the changelog directly in the commit
+  - Alternatively, if work isn't done in PRs write changes to the changelog in the same commit or right after it
 - Run the tests locally and make sure all pass
 - When ready to publish the new version, polish the changelog (refer to the Changelog section below), then create an annonated tag:
   - dotnet: Run `./scripts tag-version` which gets the version from version.props file
@@ -37,7 +37,7 @@ The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
 - Publish packages / Run deployments
   - Either have an action workflow that auto publishes/deploys on a tag
   - Or publish/deploy manually
-- Go to GitHub Releases, create a new release, select previously pushed tag, then copy the version's changelog CHANGELOG.md
+- Go to GitHub Releases, create a new release, select previously pushed tag, then copy the version's changelog from CHANGELOG.md
 - Close the relevant milestone if it exists
 
 ## Changelog

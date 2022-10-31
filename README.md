@@ -14,14 +14,8 @@ Setting up the repo:
 
 - Use a template if possible: [template-dotnet-package](https://github.com/mrahhal/template-dotnet-package), [template-roslyn-analyzer](https://github.com/mrahhal/template-roslyn-analyzer)
 - Create DEVELOPMENT.md which describes the development cycle and possibly links to this document.
-- Create release:\* labels (ref: https://github.com/mrahhal/css-theming/labels)
-- Create .github/release.yml (ref: https://github.com/mrahhal/css-theming/blob/main/.github/release.yml)
-- Create CHANGELOG.md. Will be filling this out after creating each release so that a copy of the CHANGELOG is kept offline independent of GitHub. (ref: https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHANGELOG.md)
-- Add to GitHub repo secrets: NUGET_TOKEN
-
-Ref:
-
-- https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes
+- Create CHANGELOG.md. Will be filling this out after PRs/commits. After each release, we can optionally copy the release's changelog content to GitHub releases. (ref: https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHANGELOG.md)
+- Add to GitHub repo secrets the relevant secrets: i.e NUGET_TOKEN, NPM_TOKEN, etc
 
 ## Cycle
 
@@ -30,21 +24,74 @@ The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
 - Update the version (updating the version first allows CI to produce proper prerelease packages if necessary):
   - dotnet: Update the version in version.props
   - Node: `npm version [...] --no-git-tag-version`
-- Work: Merge PRs, assigning them one of the release:\* labels (so that they're picked up by auto generated release notes)
-  - Alternatively, if work isn't done in PRs write changes to CHANGELOG.md manually
+- Work:
+  - Merge PRs, making sure they update the changelog where appropriate
+  - Alternatively, if work isn't done in PRs write changes to the changelog directly in the commit
 - Run the tests locally and make sure all pass
-- When ready to publish the new version, create an annonated tag (if you're writing CHANGELOG.md manually make sure it's updated here to reflect this tag):
+- When ready to publish the new version, polish the changelog (refer to the Changelog section below), then create an annonated tag:
   - dotnet: Run `./scripts tag-version` which gets the version from version.props file
   - Manual: `git tag -m vx.y.z vx.y.z`
 - Push with tags: `git push --follow-tags` (if this is a new branch you've created locally: `git push origin HEAD -u --follow-tags`)
 - CI should run, if all's well proceed to next step
-  - If for some reason CI fails for the tagged event: delete the tag locally and remotely, fix the problem, then tag and push again
+  - If for any reason CI fails for the tagged event, delete the tag locally and remotely, fix the problem, then tag and push again
 - Publish packages / Run deployments
   - Either have an action workflow that auto publishes/deploys on a tag
   - Or publish/deploy manually
-- If CI didn't create a GitHub Release: Go to GitHub Releases, create new release, select previously pushed tag, auto generate release notes (or copy from manual CHANGELOG.md), update more if necessary
-- Copy release content back to CHANGELOG.md if necessary
+- Go to GitHub Releases, create a new release, select previously pushed tag, then copy the version's changelog CHANGELOG.md
 - Close the relevant milestone if it exists
+
+## Changelog
+
+The CHANGELOG.md file will be filled as we work towards a release. No change should be merged without it being recorded in this file.
+
+Usually when a release is ready, you'd edit the changelog (strip "Unreleased", add a date, make sure the diff link is updated) and from this commit you tag and publish.
+
+More detailed info about a change should be added in the issue or PR, not in the changelog.
+
+Here's a template:
+
+```md
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+Make sure to always view this file from the main branch to get an up to date changelog.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/)
+and this project adheres to [Semantic Versioning](http://semver.org/).
+
+## Unreleased: 1.1.0
+
+[**Full diff**](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/compare/v1.0.3...HEAD)
+
+### Added
+
+- Support nested properties when defining a keyset ([#19](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/pull/23) by [@mrahhal](https://github.com/mrahhal))
+
+## 1.0.3 - 2022-06-16
+
+[**Full diff**](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/compare/v1.0.2...v1.0.3)
+
+This change introduces support for NRTs, lorem ipsum. You can add optional general text here.
+
+### Improved
+
+- Generate expressions to use sql parameters instead of constants ([#19](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/issues/19) by [@mrahhal](https://github.com/mrahhal))
+```
+
+The list of change types (in this order):
+
+- Fixed
+- Improved (improvements to existing functionality, i.e perf/etc)
+- Added (new features)
+- Changed (breaking changes to existing functionality)
+- Deprecated
+- Removed
+- Other
+
+Ref:
+
+https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHANGELOG.md
 
 ## Reference repos
 

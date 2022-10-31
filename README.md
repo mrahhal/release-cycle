@@ -23,7 +23,7 @@ The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
 
 - Update the version (updating the version first allows CI to produce proper prerelease packages if necessary):
   - dotnet: Update the version in version.props
-  - Node: `npm version [...] --no-git-tag-version`
+  - Node: `npm version x.y.z --no-git-tag-version`
 - Work:
   - Merge PRs, making sure they update the changelog where appropriate
   - Alternatively, if work isn't done in PRs write changes to the changelog in the same commit or right after it
@@ -42,7 +42,7 @@ The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
 
 ## Changelog
 
-The CHANGELOG.md file will be filled as we work towards a release. No change should be merged without it being recorded in this file.
+The CHANGELOG.md file will be added to as we work towards a release. No change should be merged without it being recorded in this file.
 
 Usually when a release is ready, you'd edit the changelog (strip "Unreleased", add a date, make sure the diff link is updated) and from this commit you tag and publish.
 
@@ -54,8 +54,6 @@ Here's an example changelog file:
 # Changelog
 
 All notable changes to this project will be documented in this file.
-
-Make sure to always view this file from the main branch to get an up to date changelog.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).

@@ -60,21 +60,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased: 1.1.0
 
-[**Full diff**](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/compare/v1.0.3...HEAD)
-
 ### Added
 
 - Support nested properties when defining a keyset ([#19](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/pull/23) by [@mrahhal](https://github.com/mrahhal))
 
-## 1.0.3 - 2022-06-16
+[**Full diff**](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/compare/v1.0.3...HEAD)
 
-[**Full diff**](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/compare/v1.0.2...v1.0.3)
+## 1.0.3 - 2022-06-16
 
 This change introduces support for NRTs, lorem ipsum. You can add optional general text here.
 
 ### Improved
 
 - Generate expressions to use sql parameters instead of constants ([#19](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/issues/19) by [@mrahhal](https://github.com/mrahhal))
+
+[**Full diff**](https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/compare/v1.0.2...v1.0.3)
 ```
 
 The list of change types (in this order):

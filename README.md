@@ -21,7 +21,7 @@ Setting up the repo:
 
 The cycle might contain specific steps depending on the stack (dotnet/Node/etc).
 
-- Update the version (updating the version first allows CI to produce proper prerelease packages if necessary):
+- Update the version (updating the version first allows CI to produce proper prerelease packages if necessary. *REVIEW*: This isn't proving feasible as sometimes you can't know what the next version is going to be between minor/major updates):
   - dotnet: Update the version in version.props
   - Node: `npm version x.y.z --no-git-tag-version`
 - Work:

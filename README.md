@@ -87,6 +87,12 @@ The list of change types (in this order):
 - Removed
 - Other
 
+Rules for incrementing the semver according to what the unreleased list contains:
+
+- Changed/Removed -> Major
+- Added -> Minor
+- Anything else -> Patch
+
 Ref:
 
 - https://github.com/mrahhal/MR.EntityFrameworkCore.KeysetPagination/blob/main/CHANGELOG.md
